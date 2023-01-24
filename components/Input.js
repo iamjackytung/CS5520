@@ -23,7 +23,8 @@ export default function Input({
           }}
         ></Image>
         <TextInput
-          style={{ backgroundColor: "red", height: 30 }}
+          // style={{ backgroundColor: "red", height: 30 }}
+          style={styles.input}
           value={text}
           onChangeText={(changedText) => {
             setText(changedText);
@@ -58,5 +59,12 @@ const styles = StyleSheet.create({
     height: 100,
     width: 100,
     margin: 10,
+  },
+  input: {
+    backgroundColor: "orange",
+    height: 30,
+    width: 100,
+    borderStyle: "solid",
+    marginTop: 20,
   },
 });
